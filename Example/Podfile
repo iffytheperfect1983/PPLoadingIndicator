@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PPLoadingIndicator_Example' do
+  pod 'PPLoadingIndicator', :path => '../'
+
+  target 'PPLoadingIndicator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
