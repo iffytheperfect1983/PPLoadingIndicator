@@ -1,0 +1,16 @@
+PODS:
+  - PPLoadingIndicator (0.1.0)
+
+DEPENDENCIES:
+  - PPLoadingIndicator (from `../`)
+
+EXTERNAL SOURCES:
+  PPLoadingIndicator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PPLoadingIndicator: 6ab1e687001e588a801076cf626f3a2d09cfdda4
+
+PODFILE CHECKSUM: dfd2d86469c3c4a7bc91d556e9749f11edd769bd
+
+COCOAPODS: 1.5.0

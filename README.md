@@ -22,7 +22,7 @@ pod 'PPLoadingIndicator'
 
 ## Author
 
-iffytheperfect1983, ppollavith@gmail.com
+iffytheperfect1983, iffytheperfect@gmail.com
 
 ## License
 

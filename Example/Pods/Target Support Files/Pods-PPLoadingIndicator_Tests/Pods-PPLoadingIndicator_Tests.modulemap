@@ -1,0 +1,6 @@
+framework module Pods_PPLoadingIndicator_Tests {
+  umbrella header "Pods-PPLoadingIndicator_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module PPLoadingIndicator {
+  umbrella header "PPLoadingIndicator-umbrella.h"
+
+  export *
+  module * { export * }
+}
