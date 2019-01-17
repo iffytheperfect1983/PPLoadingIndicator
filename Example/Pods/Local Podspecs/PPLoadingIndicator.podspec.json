@@ -1,8 +1,9 @@
 {
   "name": "PPLoadingIndicator",
-  "version": "0.1.0",
+  "version": "0.0.2",
+  "swift_version": "4.2",
   "summary": "Cool loading indicators",
-  "description": "Cool loading indicators",
+  "description": "Cool loading indicators to use",
   "homepage": "https://github.com/iffytheperfect1983/PPLoadingIndicator",
   "license": {
     "type": "MIT",
@@ -13,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/iffytheperfect1983/PPLoadingIndicator.git",
-    "tag": "0.1.0"
+    "tag": "0.0.2"
   },
   "platforms": {
     "ios": "8.0"

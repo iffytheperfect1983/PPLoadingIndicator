@@ -1,5 +1,5 @@
 PODS:
-  - PPLoadingIndicator (0.1.0)
+  - PPLoadingIndicator (0.0.2)
 
 DEPENDENCIES:
   - PPLoadingIndicator (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PPLoadingIndicator: 6ab1e687001e588a801076cf626f3a2d09cfdda4
+  PPLoadingIndicator: 5bb3d0033b8d29e9d2571676d358b08b6c142b20
 
 PODFILE CHECKSUM: dfd2d86469c3c4a7bc91d556e9749f11edd769bd
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

@@ -8,6 +8,7 @@
 import Foundation
 
 public class PPLoadingIndicatorHelper {
+  // 0.1.1
   public static let number = 2.0
   
   public static func getNumber() -> Double {
