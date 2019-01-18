@@ -7,7 +7,11 @@
 
 import Foundation
 
+public typealias ValueClosure<T> = (T) -> Void
+public typealias VoidClosure = () -> Void
+
 public class PPLoadingIndicatorHelper {
+  
   // 0.1.1
   public static let number = 2.0
   
