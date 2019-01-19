@@ -88,8 +88,10 @@ public class PPLoadingIndicator: UIView {
   }
   
   @discardableResult
-  public class func startAnimation(duration: Double, animated: Bool = true) -> PPLoadingIndicator {
-    let loadingIndicator = PPLoadingIndicator.startAnimation()
+  public class func startAnimation(
+    duration: Double,
+    loadingIndicatorType: LoadingIndicatorType = LoadingIndicatorType.singleCircle(color: UIColor.blue, rotationType: .clockWise, rotationSpeed: .normal, animated: true)) -> PPLoadingIndicator {
+    let loadingIndicator = PPLoadingIndicator.startAnimation(loadingIndicatorType: loadingIndicatorType)
     loadingIndicator.delay(duration) {
       PPLoadingIndicator.hide()
     }
