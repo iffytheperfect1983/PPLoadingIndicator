@@ -32,7 +32,10 @@ class ViewController: UIViewController {
     myView.backgroundColor = UIColor.orange
     PPLoadingIndicator.useContainerView(view: myView)
     view.addSubview(myView)
-    PPLoadingIndicator.startAnimation(loadingIndicatorType: .singleCircle(color: UIColor.green, rotationType: .clockWise, rotationSpeed: .normal, animated: true))
+//    PPLoadingIndicator.startAnimation(loadingIndicatorType: .singleCircle(color: UIColor.green, rotationType: .clockWise, rotationSpeed: .normal, animated: true))
+    let loadingIndicatorType = LoadingIndicatorType.singleCircle(color: UIColor.purple, rotationType: .clockWise, rotationSpeed: .normal, animated: true)
+    PPLoadingIndicator.startAnimation(duration: 5.0, loadingIndicatorType: loadingIndicatorType)
+    
   }
   
 }
