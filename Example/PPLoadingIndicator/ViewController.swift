@@ -33,9 +33,35 @@ class ViewController: UIViewController {
     PPLoadingIndicator.useContainerView(view: myView)
     view.addSubview(myView)
 //    PPLoadingIndicator.startAnimation(loadingIndicatorType: .singleCircle(color: UIColor.green, rotationType: .clockWise, rotationSpeed: .normal, animated: true))
-    let loadingIndicatorType = LoadingIndicatorType.singleCircle(color: UIColor.purple, rotationType: .clockWise, rotationSpeed: .normal, animated: true)
+//    let loadingIndicatorType = LoadingIndicatorType.singleCircle(color: UIColor.purple, rotationType: .clockWise, rotationSpeed: .normal, animated: true)
+    let random = randomRotation()
+    let loadingIndicatorType = LoadingIndicatorType
+      .singleCircle(color: random.color,
+                    rotationType: random.rotationType,
+                    rotationSpeed: random.rotationSpeed,
+                    animated: true)
     PPLoadingIndicator.startAnimation(duration: 5.0, loadingIndicatorType: loadingIndicatorType)
     
+  }
+  
+  private func randomRotation() -> (color: UIColor, rotationType: RotationType, rotationSpeed: RotationSpeed) {
+    let red = CGFloat(arc4random_uniform(255)) / 255.0
+    let green = CGFloat(arc4random_uniform(255)) / 255.0
+    let blue = CGFloat(arc4random_uniform(255)) / 255.0
+    let color = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+    
+    let rotationTypeRandom = arc4random_uniform(2)
+    let rotationType = rotationTypeRandom == 0 ? RotationType.counterClockwise : RotationType.clockWise
+    
+    let rotationSpeedRandom = arc4random_uniform(3)
+    let rotationSpeed: RotationSpeed
+    switch rotationSpeedRandom {
+    case 0: rotationSpeed = RotationSpeed.slow
+    case 1: rotationSpeed = RotationSpeed.fast
+    default: rotationSpeed = RotationSpeed.normal
+    }
+    
+    return (color: color, rotationType: rotationType, rotationSpeed: rotationSpeed)
   }
   
 }
